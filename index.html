@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cup of Coffee using CSS</title>
+  <style>
+    body {
+      background-color: aqua;
+    }
+    .cup {
+      height: 300px;
+      width: 300px;
+      border-bottom-left-radius: 70px;
+      border-bottom-right-radius: 70px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-color: azure;
+      position: absolute;
+      z-index: 15;
+      top:50%;
+      left: 50%;
+      margin: -100px 0 0 -150px;
+      box-shadow: 6px 10px 15px rgba(160, 156, 156, 0.548);
+    }
+
+    .handle {
+      position: absolute;
+      height: 200px;
+      width: 120px;
+      top: 70px;
+      left: -120px;
+      border-bottom-left-radius: 70px 100px;
+      border-bottom-right-radius: 75px 100px;
+      border-top-left-radius: 50% 20px;
+      border-top-right-radius: 50% 20px;
+      background-color: azure;
+      box-shadow: -5px 10px 20px rgba(160, 156, 156, 0.548);
+    }
+
+    .handle::after {
+      content:"" ;
+      position: absolute;
+      height: 140px;
+      width: 90px;
+      top: 30px;
+      right: 0;
+      border-bottom-left-radius: 45px 70px;
+      border-bottom-right-radius: 45px 70px;
+      border-top-left-radius: 45px 35px;
+      border-top-right-radius: 45px 35px;
+      background-color: aqua;
+      box-shadow: -5px 10px 20px rgba(160, 156, 156, 0.548);
+    }
+  </style>
+</head>
+<body>
+  <div class="cup">
+    <h1 style="text-align: center; margin-top: 40%;
+    font-family:cursive">COFFEE</h1>
+    <div class="handle"></div>
+  </div>
+
+</body>
+</html>
